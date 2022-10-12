@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: rgb(237,229,65);
+    background: linear-gradient(90deg, rgba(237,229,65,1) 0%, rgba(38,210,156,1) 65%);
+}
+
+.container {
+    width: 40%;
+    height: 68vh;
+    background-color:  #ECFDF5;
+    margin: 2rem auto;
+    border-radius: .25rem;
+}
+
+.main {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    margin-bottom: 1.75rem;
+}
+
+h1 {
+    text-align: start;
+    color: #2B283A;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+h1:nth-child(2) {
+    margin-top: -.3rem;
+    color: #10B981;
+    margin-bottom: .5rem;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #6B7280;
+    text-align: start;
+}
+
+.pass--length--mssge {
+    font-size: .75rem;
+    text-align: center;
+    padding: 0 .5rem;
+}
+
+
+#pass1, #pass2 {
+    color: white;
+    padding: 0 .5rem;
+}
+
+.copy--image {
+    height: 1.85rem;
+    margin-left: .5rem;
+}
+
+.pass1--sector, .pass2--sector {
+    background-color: black;
+    min-height: 2.25rem;
+    height: auto;
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pass--section {
+    margin: 1.5rem auto;
+}
+
+.pass1--section, .pass2--section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .50rem;
+}
+
+#copyBtn1, #copyBtn2 {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+#copyBtn1:active, #copyBtn2:active {
+    transform: scale(0.98);
+}
+
+#passBtn {
+    margin-top: .45rem;
+    padding: 9px 17px 9px 15px;
+    background: #10B981;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    color: #FFFFFF;
+}
+
+#passLength {
+    border-radius: 6px;
+    padding: .25rem;
+    color: #10B981;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        height: 58vh;
+    }
+    
+    .main {
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: -.8rem;
+    }
+
+    p {
+        font-size: 15px;
+        margin-top: -.5rem;
+    }
+
+    .pass--length--mssge {
+        font-size: .65rem;
+    }
+
+    #passLength {
+        padding: .15rem;
+        font-weight: 600;
+    }
+
+    #passBtn {
+        margin-top: .25rem;
+        padding: 4.5px 8px ;
+    }
+
+    .pass--section {
+        margin: .8rem auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        width: 70vw;
+        height: 52vh;
+    }
+
+    .main {
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 427px) {
+    .container {
+        height: auto;
+    }
+
+    .main {
+        padding-top: .5rem;
+        padding-left: .75rem;
+    }
+
+    .pass2--section {
+        padding-bottom: .5rem;
+    }
+    .pass--length--mssge {
+        line-height: normal;
+        margin-bottom: .25rem;
+    }
+}
